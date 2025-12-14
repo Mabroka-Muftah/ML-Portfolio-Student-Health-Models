@@ -45,8 +45,8 @@ def get_std_inputs():
     inputs["Mother's occupation"] = st.selectbox(
         'Mother\'s Occupation', 
              ['Unemployed', 'Student','Professional', 'Administrative staff', 'Service worker', 'Manual laborer', 'Other'])
-     inputs["Displaced"] = st.selectbox("Lives Away from Home?", ["No", "Yes"], index=0)
-     inputs["Scholarship holder"] = st.selectbox("Scholarship Holder?", ["No", "Yes"], index=0)
+    inputs["Displaced"] = st.selectbox("Lives Away from Home?", ["No", "Yes"], index=0)
+    inputs["Scholarship holder"] = st.selectbox("Scholarship Holder?", ["No", "Yes"], index=0)
     
 
     # === Optional Features (Hidden by defaults) =====
@@ -337,6 +337,7 @@ with tab2:
         # get results
         st.success(f"**Predicted Death Rate**: {pred} per 100,000 people")
         st.info("Model Performance: R² = 0.55 | Mean Error = ±14.1 deaths/100k")
+
 
 
 
