@@ -123,32 +123,32 @@ def get_can_inputs():
              inputs["percentmarried"] = st.slider( "% of adults who are married", 
                0.0, 100.0, 52.5)
              inputs["pctmarriedhouseholds"] = st.slider(
-        "% of households headed by married couples", 
-        0.0, 100.0, 51.70068027
-       )
+             "% of households headed by married couples", 
+              0.0, 100.0, 51.70068027
+               )
              inputs["birthrate"] = st.number_input(
-         "Births per 1,000 people per year", 
-        min_value=0.0, max_value=1000.0, value=5.356186395, step=0.1
-       )
+                   "Births per 1,000 people per year", 
+                    min_value=0.0, max_value=1000.0, value=5.356186395, step=0.1
+                     )
     
        # Education (18-24)
              st.markdown("### 🎓 Education (Ages 18-24)")
              inputs["pctnohs18_24"] = st.slider(
-        "% with no high school diploma (18-24)", 
-        0.0, 100.0, 17.2
-       )
+               "% with no high school diploma (18-24)", 
+                0.0, 100.0, 17.2
+                  )
              inputs["pcths18_24"] = st.slider(
-        "% with high school diploma only (18-24)", 
-        0.0, 100.0, 34.8
-       )
+              "% with high school diploma only (18-24)", 
+              0.0, 100.0, 34.8
+                  )
              inputs["pctsomecol18_24"] = st.slider(
-        "% with some college (18-24)", 
-        0.0, 100.0, 40.4
-       )
+              "% with some college (18-24)", 
+               0.0, 100.0, 40.4
+                  )
              inputs["pctbachdeg18_24"] = st.slider(
-        "% with bachelor's degree (18-24)", 
-        0.0, 100.0, 5.4
-       )
+              "% with bachelor's degree (18-24)", 
+               0.0, 100.0, 5.4
+               )
     
        # Employment
              st.markdown("### 💼 Employment")
