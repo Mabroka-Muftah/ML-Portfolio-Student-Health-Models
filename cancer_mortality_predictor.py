@@ -70,7 +70,7 @@ def get_can_inputs():
     with st.sidebar:
          st.subheader("📊 Key County Indicators")
          inputs["incidencerate"] = st.slider("Cancer incidence rate (cases per 100,000 people)",
-                    0.0, 100000.0, 453.5494221)
+                    0.0, 100000.0, 453.5494221, help='Cancer incidence rate in the county per 100,000')
          
          inputs["avgdeathsperyear"] = st.slider("Average annual number of cancer deaths",
              0.0, 100000.0, 61.0 )
